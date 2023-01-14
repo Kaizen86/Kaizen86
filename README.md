@@ -7,7 +7,7 @@ I'm Dan, and welcome to my Github! This is a portfolio of my prime programming p
 ```
                    -`                    github.com/Blattoid
                   .o+`                   -----------USER-----------
-                 `ooo/                   Age: 19  (22/Dec)
+                 `ooo/                   Age: 20  (22/Dec)
                 `+oooo:                  Pronouns: he/him
                `+oooooo:                 Languages: Python, C, C#, Bash, ASM
                -+oooooo+:                Hired: True
@@ -27,6 +27,7 @@ I'm Dan, and welcome to my Github! This is a portfolio of my prime programming p
 ```
 
 <!--
+TODO: Write about myself
 ### About me
 I've always had an insatiable curiosity for understanding how electronic devices and their software operate. I first learnt BASIC from my Dad with an emulator of a BBC Micro, and that event sent my life hurtling down an epic pathway into a career in software development and embedded systems. 
 -->
