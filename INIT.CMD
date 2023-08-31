@@ -47,6 +47,7 @@ doskey cp=copy $*
 doskey mv=move $*
 doskey rm=del $*
 doskey pwd=cd
+doskey clear=cls
 doskey alias=doskey $*
 doskey aliases=doskey/macros:all
 doskey history=doskey/history
@@ -67,12 +68,17 @@ REM By placing the username after the arguments, the default can be overridden
 REM because ssh uses the first username if it is specified multiple times.
 doskey ssh=ssh -oUserKnownHostsFile=nul -oStrictHostKeyChecking=no $* -l daniel
 
-REM Detect the presence of nano, and set the edit alias to either that or notepad.
+REM Detect the presence of nano or vim, and set the edit alias to either that or notepad.
 where nano >NUL 2>NUL
 if %ERRORLEVEL% equ 0 (
 	doskey edit=nano $*
 ) else (
-	doskey edit=notepad $*
+	where vim >NUL 2>NUL
+	if %ERRORLEVEL% equ 0 (
+		doskey edit=vim $*
+	) else (
+		doskey edit=notepad $*
+	)
 )
 
 REM Detect the presence of Firefox, and set the alias to either of the possible
