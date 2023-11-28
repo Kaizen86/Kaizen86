@@ -5,7 +5,7 @@ I'm Dan, and welcome to my Github! This is a portfolio of my prime programming p
 
 ### $ neofetch
 ```
-                   -`                    github.com/Blattoid
+                   -`                    github.com/Kaizen86
                   .o+`                   -----------USER-----------
                  `ooo/                   Age: 20  (22/Dec)
                 `+oooo:                  Pronouns: he/him
