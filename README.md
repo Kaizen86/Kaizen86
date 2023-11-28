@@ -25,9 +25,3 @@ I'm Dan, and welcome to my Github! This is a portfolio of my prime programming p
  `++:.                           `-/+/   Memory: 16384MiB 
  .`                                 `/
 ```
-
-<!--
-TODO: Write about myself
-### About me
-I've always had an insatiable curiosity for understanding how electronic devices and their software operate. I first learnt BASIC from my Dad with an emulator of a BBC Micro, and that event sent my life hurtling down an epic pathway into a career in software development and embedded systems. 
--->
