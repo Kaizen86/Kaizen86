@@ -10,7 +10,7 @@ REM INIT.CMD can be executed manually, but to configure automatically
 REM running on launch, add a registry key to the following path:
 REM HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor
 REM Add a new Expandable String Value (REG_EXPAND_SZ) there and call it Autorun
-REM Then give this key the following contents, incuding the quotations:
+REM Then give this key the following contents, including the quotations:
 REM "%userprofile%\INIT.CMD"
 
 REM =============================================
@@ -24,15 +24,15 @@ REM Colour values:
 REM 	Background: 62/49/162
 REM 	Text colour: 124/112/218
 REM Font:
-REM 	20pt Lucidia Sans Typewriter with Bold Fonts enabled
+REM 	16pt Lucidia Sans Typewriter with Bold Fonts enabled
 REM The following code prints the startup text.
 cls
 echo.
-REM Check if Python is installed and respond accordingly
-where python >NUL 2>NUL
+REM Check if Python 3 is installed and respond accordingly
+where python3 >NUL 2>NUL
 if %ERRORLEVEL% equ 0 (
-	REM Uses a bit of python code to center the text. Only works with Python 3 due to the use of a lambda.
-	python -c "center=lambda s: print(int(max(0,(__import__('shutil').get_terminal_size()[0]-len(s))/2-1))*' '+s);center('**** COMMODORE 64 BASIC V2 ****');center('64K RAM SYSTEM  38911 BASIC BYTES FREE')"
+	REM Uses Python to centre the banner text. Needs Python 3 due to the use of a lambda.
+	python3 -c "centre=lambda s: print(int(max(0,(__import__('shutil').get_terminal_size()[0]-len(s))/2-1))*' '+s);centre('**** COMMODORE 64 BASIC V2 ****');centre('64K RAM SYSTEM  38911 BASIC BYTES FREE')"
 ) else (
 	REM Manual spacing will have to do.
 	echo         **** COMMODORE 64 BASIC V2 ***
@@ -46,22 +46,24 @@ doskey cat=type $*
 doskey cp=copy $*
 doskey mv=move $*
 doskey rm=del $*
+doskey touch=copy NUL $1
 doskey pwd=cd
 doskey clear=cls
+doskey ip=ipconfig $*
+doskey which=where $*
+doskey less=type $1 $b more
 doskey alias=doskey $*
 doskey aliases=doskey/macros:all
 doskey history=doskey/history
 doskey killall=taskkill /f /im $1
-doskey mkcd=@echo off $T mkdir $1 $T cd $1 $T echo on
 doskey poweroff=shutdown /s /f /t 0
 doskey reboot=shutdown /r /f /t 0
 set ~=%USERPROFILE%
 
 REM ===Other macros/aliases===
-doskey ip=ipconfig $*
+doskey mkcd=@echo off $T mkdir $1 $T cd $1 $T echo on
 doskey help=@echo off $T help $T doskey/macros:all $T echo on
 doskey q=exit
-doskey less=type $1 $b more
 
 REM Completely disables host key checks and provides a default username 'daniel'.
 REM By placing the username after the arguments, the default can be overridden
