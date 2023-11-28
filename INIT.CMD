@@ -52,6 +52,7 @@ doskey clear=cls
 doskey ip=ipconfig $*
 doskey which=where $*
 doskey less=type $1 $b more
+doskey unset=set $1=
 doskey alias=doskey $*
 doskey aliases=doskey/macros:all
 doskey history=doskey/history
@@ -97,4 +98,5 @@ if exist "%ff%" (
 	REM No firefox detected
 	doskey firefox=echo No Firefox install was found.
 )
-set ff= && set ffdev=
+set ff=
+set ffdev=
