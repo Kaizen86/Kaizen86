@@ -7,7 +7,7 @@ I'm Dan, and welcome to my Github! This is a portfolio of my prime programming p
 ```
                    -`                    github.com/Kaizen86
                   .o+`                   -----------USER-----------
-                 `ooo/                   Age: 20  (22/Dec)
+                 `ooo/                   Age: 21  (22/Dec)
                 `+oooo:                  Pronouns: he/him
                `+oooooo:                 Languages: Python, C, C#, Bash, ASM
                -+oooooo+:                Hired: True
