@@ -71,18 +71,28 @@ REM By placing the username after the arguments, the default can be overridden
 REM because ssh uses the first username if it is specified multiple times.
 doskey ssh=ssh -oUserKnownHostsFile=nul -oStrictHostKeyChecking=no $* -l daniel
 
-REM Detect the presence of nano or vim, and set the edit alias to either that or notepad.
-where nano >NUL 2>NUL
+REM Detect the presence of an editor and set the edit alias accordingly.
+goto install_edit_alias
+:test_for_editor
+where %1 >NUL 2>NUL
 if %ERRORLEVEL% equ 0 (
-	doskey edit=nano $*
-) else (
-	where vim >NUL 2>NUL
-	if %ERRORLEVEL% equ 0 (
-		doskey edit=vim $*
-	) else (
-		doskey edit=notepad $*
-	)
+        REM yay
+        doskey edit=%1 $*
+        exit /b 0
 )
+REM nay
+exit /b 1
+
+:install_edit_alias
+REM Loop over editor commands is defined here. Notepad is used as a fallback
+setlocal EnableDelayedExpansion
+for %%i in (vim vi nano notepad) do (
+        call :test_for_editor %%i
+        if !ERRORLEVEL! equ 0 (goto end_edit_setup)
+)
+REM This shouldn't happen, but if no editor was found then it's worth mentioning.
+echo No editor found!
+:end_edit_setup
 
 REM Detect the presence of Firefox, and set the alias to either of the possible
 REM executables, or to instead output an error message if neither were found.
