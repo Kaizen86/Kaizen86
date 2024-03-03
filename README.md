@@ -8,21 +8,21 @@ I'm Dan, and welcome to my Github! This is a portfolio of my prime programming p
           ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖            github.com/Kaizen86
           ▜███▙       ▜███▙  ▟███▛            -----------USER-----------
            ▜███▙       ▜███▙▟███▛             Pronouns: he/him
-            ▜███▙       ▜██████▛              Host: ASUSTeK COMPUTER INC. PRIME B450M-A II 
-     ▟█████████████████▙ ▜████▛     ▟▙        Languages: Python, Rust, C, C#, Bash, ASM
-    ▟███████████████████▙ ▜███▙    ▟██▙       Hired: True
-           ▄▄▄▄▖           ▜███▙  ▟███▛       Currently: Tumbling down the NixOS rabbithole
-          ▟███▛             ▜██▛ ▟███▛        Favourite Podcast: Lost Terminal
-         ▟███▛               ▜▛ ▟███▛         Call sign: [Maybe someday]
-▟███████████▛                  ▟██████████▙   
-▜██████████▛                  ▟███████████▛   ----------SYSTEM----------
-      ▟███▛ ▟▙               ▟███▛            OS: NixOS 24.05 (Uakari) x86_64
-     ▟███▛ ▟██▙             ▟███▛             Host: ASUSTeK COMPUTER INC. PRIME B450M-A II
-    ▟███▛  ▜███▙           ▝▀▀▀▀              Shell: bash
-    ▜██▛    ▜███▙ ▜██████████████████▛        Resolution: 2560x1440
-     ▜▛     ▟████▙ ▜████████████████▛         DE: Plasma 5 (Wayland)
-           ▟██████▙       ▜███▙               Terminal: konsole
-          ▟███▛▜███▙       ▜███▙              CPU: AMD Ryzen 9 5950X (32) @ 3.400GHz
-         ▟███▛  ▜███▙       ▜███▙             Memory: 4081MiB / 64216MiB 
+            ▜███▙       ▜██████▛              Languages: Python, Rust, C, C#, Bash, ASM
+     ▟█████████████████▙ ▜████▛     ▟▙        Hired: True
+    ▟███████████████████▙ ▜███▙    ▟██▙       Currently: Tumbling down the NixOS rabbithole
+           ▄▄▄▄▖           ▜███▙  ▟███▛       Favourite Podcast: Lost Terminal
+          ▟███▛             ▜██▛ ▟███▛        Ham Callsign: [Maybe someday]
+         ▟███▛               ▜▛ ▟███▛         
+▟███████████▛                  ▟██████████▙   ----------SYSTEM----------
+▜██████████▛                  ▟███████████▛   OS: NixOS 24.05 (Uakari) x86_64
+      ▟███▛ ▟▙               ▟███▛            Host: ASUSTeK COMPUTER INC. PRIME B450M-A II
+     ▟███▛ ▟██▙             ▟███▛             Shell: bash
+    ▟███▛  ▜███▙           ▝▀▀▀▀              Resolution: 2560x1440
+    ▜██▛    ▜███▙ ▜██████████████████▛        DE: Plasma 5 (Wayland)
+     ▜▛     ▟████▙ ▜████████████████▛         Terminal: konsole
+           ▟██████▙       ▜███▙               CPU: AMD Ryzen 9 5950X (32) @ 3.400GHz
+          ▟███▛▜███▙       ▜███▙              Memory: 64216MiB 
+         ▟███▛  ▜███▙       ▜███▙             
          ▝▀▀▀    ▀▀▀▀▘       ▀▀▀▘             
 ```
