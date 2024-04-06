@@ -63,7 +63,7 @@ set ~=%USERPROFILE%
 
 REM ===Other macros/aliases===
 doskey mkcd=@echo off $T mkdir $1 $T cd $1 $T echo on
-doskey help=@echo off $T help $T doskey/macros:all $T echo on
+doskey help=@echo off $T help $1 $T doskey/macros:all $T echo on
 doskey q=exit
 
 REM Completely disables host key checks and provides a default username 'daniel'.
@@ -76,9 +76,10 @@ goto install_edit_alias
 :test_for_editor
 where %1 >NUL 2>NUL
 if %ERRORLEVEL% equ 0 (
-        REM yay
-        doskey edit=%1 $*
-        exit /b 0
+	rem yay
+	echo success
+	doskey edit=%1 $*
+	exit /b 0
 )
 REM nay
 exit /b 1
@@ -87,8 +88,9 @@ exit /b 1
 REM Loop over editor commands is defined here. Notepad is used as a fallback
 setlocal EnableDelayedExpansion
 for %%i in (vim vi nano notepad) do (
-        call :test_for_editor %%i
-        if !ERRORLEVEL! equ 0 (goto end_edit_setup)
+	<NUL set /p=%%i... 
+	call :test_for_editor %%i
+	if !ERRORLEVEL! equ 0 (goto end_edit_setup)
 )
 REM This shouldn't happen, but if no editor was found then it's worth mentioning.
 echo No editor found!
