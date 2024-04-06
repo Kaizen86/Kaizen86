@@ -29,10 +29,10 @@ REM The following code prints the startup text.
 cls
 echo.
 REM Check if Python 3 is installed and respond accordingly
-where python3 >NUL 2>NUL
+where python >NUL 2>NUL
 if %ERRORLEVEL% equ 0 (
 	REM Uses Python to centre the banner text. Needs Python 3 due to the use of a lambda.
-	python3 -c "centre=lambda s: print(int(max(0,(__import__('shutil').get_terminal_size()[0]-len(s))/2-1))*' '+s);centre('**** COMMODORE 64 BASIC V2 ****');centre('64K RAM SYSTEM  38911 BASIC BYTES FREE')"
+	python -c "centre=lambda s: print(int(max(0,(__import__('shutil').get_terminal_size()[0]-len(s))/2-1))*' '+s);centre('**** COMMODORE 64 BASIC V2 ****');centre('64K RAM SYSTEM  38911 BASIC BYTES FREE')"
 ) else (
 	REM Manual spacing will have to do.
 	echo         **** COMMODORE 64 BASIC V2 ***
