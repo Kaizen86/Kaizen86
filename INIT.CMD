@@ -66,10 +66,10 @@ doskey mkcd=@echo off $T mkdir $1 $T cd $1 $T echo on
 doskey help=@echo off $T help $1 $T doskey/macros:all $T echo on
 doskey q=exit
 
-REM Completely disables host key checks and provides a default username 'daniel'.
+REM Specifies a default username for ssh sessions.
 REM By placing the username after the arguments, the default can be overridden
-REM because ssh uses the first username if it is specified multiple times.
-doskey ssh=ssh -oUserKnownHostsFile=nul -oStrictHostKeyChecking=no $* -l daniel
+REM because OpenSSH uses the first username if it is specified multiple times.
+doskey ssh=ssh -l kaizen
 
 REM Detect the presence of an editor and set the edit alias accordingly.
 goto install_edit_alias
