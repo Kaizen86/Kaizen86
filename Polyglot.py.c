@@ -45,9 +45,9 @@
 char buf[3][15];
 int bufid = 0;
 char* str(int i) {
-	bufid = bufid>2 ? 0 : bufid;
-	sprintf(buf[bufid++], "%d", i);
-	return buf[bufid-1];
+    bufid = bufid>2 ? 0 : bufid;
+    sprintf(buf[bufid++], "%d", i);
+    return buf[bufid-1];
 }
 
 // Declare your variables here! //
@@ -59,17 +59,17 @@ int boundary;
 
 
 def main():
-	print("hello world")
-	print(str(40+2), str(69))
-	i = 0;
-	boundary = 7;
-	while (i < 10):
-		if (i <= boundary):
-			print(str(i), "is less than or equal to", str(boundary))
-		else:
-			print(str(i), "is greater than", str(boundary))
-		pass
-		i = i + 1;
+    print("hello world")
+    print(str(40+2), str(69))
+    i = 0;
+    boundary = 7;
+    while (i < 10):
+        if (i <= boundary):
+            print(str(i), "is less than or equal to", str(boundary))
+        else:
+            print(str(i), "is greater than", str(boundary))
+        pass
+        i = i + 1;
     pass
     exit()
 
