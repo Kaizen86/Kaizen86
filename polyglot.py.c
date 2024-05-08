@@ -1,7 +1,6 @@
-#if 0
+#pragma/*
 """
-#endif
-/* C-Python Polyglot by Kaizen86 2024
+ * C-Python Polyglot by Kaizen86 2024
  * I had a silly idea one day, to see if C preprocessors
  * macros could be used to generate the equivalent C code
  * for a simple Python script, so that the file is
@@ -14,10 +13,7 @@
  * can each only be used once due to macro weirdness. :(
  * Oh and while/else need a closing brace in C, which I
  * hid inside the pass statements.
- */
-#if 0
-"""
-#endif
+"""#*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -37,9 +33,8 @@
 #define True 1
 #define False 0
 
-#if 0
-"""
-#endif
+#pragma/*
+"""#*/
 // Allow up to 3 usages of str per print,
 // each with space for 15 digits
 char buf[3][15];
@@ -53,9 +48,9 @@ char* str(int i) {
 // Declare your variables here! //
 int i;
 int boundary;
-#if 0
-"""
-#endif
+
+#pragma/*
+"""#*/
 
 
 def main():
